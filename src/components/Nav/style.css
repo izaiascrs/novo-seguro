@@ -1,0 +1,153 @@
+.nav-container {
+    background-color: #020045;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: center;
+}
+
+
+nav {
+    background-color: #020045;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1700px;
+}
+
+.logo img {
+    width: 70%;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 0 1em;
+    padding: 0 0 .5em 0;
+    transition: .3s ease;
+}
+
+nav ul li.active {
+    border-bottom: 1px solid #F49C1C;
+}
+nav ul li.active a { 
+    color: #F49C1C;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+nav ul li.avatar-options {
+    position: relative;
+}
+
+nav ul li .avatar {
+    line-height: 0;
+}
+
+nav ul li .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+nav ul li a:hover { 
+    color: #F49C1C;
+}
+
+nav ul li .options a {
+    color: gray;
+}
+
+nav ul li .options {
+    background-color: white;
+    position: absolute;
+    top: 4em;
+    right: 0;
+    width: 150px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1)
+}
+
+nav ul li.avatar-options .options ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    height: 100%;
+}
+
+nav ul li.avatar-options .options ul li {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);   
+}
+
+
+nav ul li.avatar-options .options ul li:first-child {
+    border-bottom: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);   
+} 
+
+nav ul li.avatar-options .options ul li:last-child {
+    border-bottom: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+} 
+
+
+
+nav ul li.avatar-options .options ul li:hover {
+    background-color: gray;
+}
+
+nav ul li.avatar-options .options ul li:hover a {
+    color: white !important;
+
+}
+
+.cancelar:hover {
+    background-color: rgb(240, 74, 74) !important;
+    color: white !important;
+}
+
+.cancelar:hover a {
+    color: white !important;
+}
+
+.hidde {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav ul li {
+        display: none;
+    }
+
+    nav ul li:last-of-type {
+        display: block;
+    }
+}

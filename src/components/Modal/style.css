@@ -1,0 +1,210 @@
+.overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;    
+    background-color: rgba(0,0,0,0.8);
+    margin: 0;
+    display: grid;
+    place-items: center;
+    z-index: 999;
+}
+
+.close {
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    cursor: pointer;
+}
+
+
+.form-container,
+.response-container,
+.congrats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 350px;
+    padding: 2em;
+}
+
+form {
+    background-color: white;
+    width: 350px;
+    border-radius: 10px;
+}
+
+
+.logo-container {
+    margin: 2em 0 0 0;
+}
+.logo-container img {
+    width: 200px;
+}
+
+form .row,
+.response-container .row {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+form .row input {
+    padding: .75em;
+    border: 1px solid#B3B3C9;
+    border-radius: 5px;    
+}
+
+form .row input:last-of-type {
+    text-transform: uppercase;
+}
+
+form .row button {
+    color: white;
+    background-color: #FF9800;
+    padding: .75em;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.response-container {
+    width: 750px;
+    color: #010052;
+    height: 80vh;    
+    overflow-x: hidden;
+}
+
+.scroll {
+    overflow-y: scroll;
+}
+
+.response-container .row {
+    width: 100%;
+    padding: .75em;
+}
+
+.response-container .row h3 {
+    margin: 0 0 .5em;
+}
+
+.response-container .personal-info,
+.features-container {
+    border: 1px solid#B3B3C9;
+    padding: .75em 1em;
+    border-radius: 10px;
+}
+
+.response-container span {
+    font-weight: 600;
+}
+
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    padding: 1.5em 1em;    
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.feature img {
+    height: 25px;
+    margin-right: .5em;
+}
+
+
+button.comprar,
+.congrats-container .row button {
+    padding: 1em 4em;
+    color: white;
+    background-color: #FF9800;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.comprar:hover,
+.congrats-container .row button:hover {
+    background-color: #faa72b;
+}
+
+.congrats-container .row {
+    text-align: center;
+}
+
+.congrats-container{ 
+    color: #010052;
+}
+
+.error-container {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+    min-width: 300px;
+}
+
+.error-message {
+    background-color: rgb(248, 85, 85);
+    color: white;
+    padding: 0 1em;
+    margin: 2em 0;
+    border-radius: 5px;
+}
+
+.error-message h2 {
+    font-size: 1.3em;
+}
+
+
+@media only screen and (max-width: 600px) { 
+
+    .form-container {
+        width: 70%;
+    }
+
+    .close {
+        top: 2%;
+        right: 3%;
+        font-size: 2em;
+    }
+
+    .container-info, form label {
+        text-align: left;
+    }
+
+    .congrats-container {
+        width: 70%;
+    }
+
+    .error-container {
+        width: 70%;
+        text-align: center;
+    }
+
+    .response-container {
+        width: 70%;
+        height: 75%;
+
+    }
+
+    .features-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

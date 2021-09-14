@@ -1,0 +1,90 @@
+.hero img {
+    width: 100%;
+    height: calc(100vh - 8.3em);
+    object-fit: cover;   
+}
+
+.let-container {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.let-container .simulation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 20px;
+    width: 274px;
+    margin-bottom: 1em;
+}
+
+.let-container .simulation h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    color: #50508C;
+}
+
+.let-container .simulation h5 {
+    color: #F49C1C;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+}
+
+.let-container .simulation button.orange {
+    background: #FFAB18;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFAB18, #FF6E79);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFAB18, #FF6E79);
+    border: none;
+    padding: .75em 3em;
+    color: white;
+    border-radius: 1.5em;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.let-container button.green {
+    background: #3ACC81;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3ACC81, #1FB4B1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3ACC81, #1FB4B1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: .5em 4em;
+    border: none;
+    border-radius: 2em;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1500px) {
+    
+    .let-container .simulation { 
+        width: 380px;
+        height: 250px;
+        justify-content: space-evenly;
+    }
+
+    .let-container .simulation h5 {
+        font-size: 22px;
+    }
+
+    .let-container .simulation h2 {
+        font-size: 32px;
+    }
+
+    .let-container .simulation button {
+        font-size: 21px;
+    }
+
+    .let-container button {
+        font-size: 17px;
+    }
+ }
